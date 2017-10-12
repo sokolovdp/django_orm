@@ -20,4 +20,5 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.IndexPage.as_view(), name='index'),
+    url(r'^items/', include('djapp.urls', namespace='items')),
 ]
