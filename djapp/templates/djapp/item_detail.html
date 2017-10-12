@@ -2,5 +2,14 @@
 
 {% block content %}
 <h1> ОПИСАНИЕ РЕШЕНИЯ </h1>
-
+    <div class="col-md-8">
+        <h3>
+            № &nbsp; {{ item.id }} &nbsp;
+            название: &nbsp;  <a href="{% url 'djapp:detail' pk=item.id %}">{{ item.name }}</a> &nbsp;
+            цена: {{ item.price }}
+        </h3>
+        <p>{{item.description}}</p>
+        <img src="{{ item.image.url }}" alt="Embedded Image" style="height:400px;"/>
+        <hr>
+    </div>
 {% endblock %}
