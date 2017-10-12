@@ -1,0 +1,11 @@
+# ignore folders
+migrations/
+.idea/
+__pycache__/
+
+
+#ignore files
+*.sqlite3
+*.db
+*.bak
+
